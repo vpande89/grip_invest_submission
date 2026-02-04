@@ -43,22 +43,27 @@ gripinvest_winter_internship_backend/
  └── README.md
 
 How to Run the Project
+first use git clone (repo name) , then go to that folder
+
 Start MySQL (Docker)
 docker compose up -d
 
 Start Backend
+npm install
 npm start
 
 Backend runs at:
 http://localhost:8080
 
-Start Frontend
+Start Frontend - > on another terminal
 cd frontend
+npm install
 npm start
 
 Frontend runs at:
 http://localhost:8081
 
+To stop do : docker compose down
 Endpoint	Method	Description
 /api/auth/signup	POST	Register user
 /api/auth/signin	POST	Login
